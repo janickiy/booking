@@ -1,0 +1,94 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+
+  "require": {
+    "php": ">=7.0.0",
+    "arrilot/laravel-widgets": "^3.6",
+    "barryvdh/laravel-ide-helper": "^2.5",
+    "bonecms/laravel-captcha": "^2.1",
+    "doctrine/dbal": "^2.9",
+    "fideloper/proxy": "~3.3",
+    "guzzlehttp/guzzle": "~6.0",
+    "intervention/image": "^2.4",
+    "ixudra/curl": "^6.16",
+    "laravel/framework": "5.5.*",
+    "laravel/tinker": "~1.0",
+    "laravelcollective/html": "~5.0",
+    "orchestra/parser": "~3.0",
+    "predis/predis": "^1.1",
+    "sentry/sentry-laravel": "^0.8.0",
+    "srmklive/flash-notifications": "~0.1",
+    "trivago/sxgeo": "~1.0",
+    "watson/rememberable": "^2.0",
+    "yajra/laravel-datatables-oracle": "~8.0",
+    "trivago/hotels": "master"
+  },
+  "require-dev": {
+    "filp/whoops": "~2.0",
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "~1.0",
+    "phpunit/phpunit": "~6.0",
+    "symfony/thanks": "^1.0",
+    "dompdf/dompdf": "dev-master",
+    "mpociot/laravel-apidoc-generator": ">=3.3.0"
+  },
+  "autoload": {
+    "classmap": [
+      "database/seeds",
+      "database/factories"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helpers/SettingsHelper.php",
+      "app/Helpers/StringHelpers.php",
+      "app/Helpers/XMLHelpers.php",
+      "app/Helpers/ResponseHelpers.php",
+      "app/Helpers/DateTimeHelpers.php",
+      "app/Helpers/MenuHelper.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ]
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ],
+    "post-install-cmd": [
+
+    ],
+    "post-update-cmd": [
+
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

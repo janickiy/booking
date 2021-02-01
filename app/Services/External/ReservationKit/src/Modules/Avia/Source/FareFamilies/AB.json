@@ -1,0 +1,423 @@
+[
+    {
+        "owner": "AB",
+        "baseClass": "economy",
+        "tariffCodePattern": "^(\\w*\\d*(NC))\\w*\\d*$",
+        "parameters": [
+            {
+                "code": "description",
+                "shortDescription": {
+                    "ru": "Классический",
+                    "en": "Classic",
+                    "de": "Klassisch"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": null
+            },
+            {
+                "code": "baggage",
+                "shortDescription": {
+                    "ru": "1 сумка до 23 кг",
+                    "en": "1 item up to 23 kg"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "carryOn",
+                "shortDescription": {
+                    "ru": "1 сумка до 8 кг",
+                    "en": "1 item up to 8 kg",
+                    "de": "1 Beutel bis 8 kg"
+                },
+                "fullDescription": {
+                    "ru": "Вес сумки не должен превышать 8 кг, с ноутбуком — 10 кг",
+                    "en": "1 item up to 8 kg (with a laptop — up to 10 kg)",
+                    "de": "Das Gewicht der Tasche sollte 8 kg nicht überschreiten, mit einem Laptop — 10 kg"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "refundable",
+                "shortDescription": {
+                    "ru": "Возврат билета",
+                    "en": "Refund",
+                    "de": "Ticketrückerstattung"
+                },
+                "fullDescription": {
+                    "ru": "Тариф полностью невозвратный",
+                    "en": "Fare is non-refundable",
+                    "de": "Fahrpreis ist nicht erstattungsfähig"
+                },
+                "needToPay": "notAvailable"
+            },
+            {
+                "code": "meal",
+                "shortDescription": {
+                    "ru": "Закуски и напитки",
+                    "en": "Snacks & Beverages",
+                    "de": "Snacks und Getränke"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "seatsRegistration",
+                "shortDescription": {
+                    "ru": "Бесплатное резервирование мест",
+                    "en": "Seat Reservation",
+                    "de": "Freie Sitzplatzreservierung"
+                },
+                "fullDescription": {
+                    "ru": "К бесплатному резервированию обычные и XL места",
+                    "en": "Standard and XL seat reservation — available",
+                    "de": "Neben der kostenlosen Reservierung — normale und XL Sitze"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "exchangeable",
+                "shortDescription": {
+                    "ru": "Перебронирование",
+                    "en": "Rebooking",
+                    "de": "Umbuchung"
+                },
+                "fullDescription": {
+                    "ru": "Перебронирование разрешено со сборами",
+                    "en": "Rebooking is allowed with fees",
+                    "de": "Umbuchung ist gegen Aufpreis erlaubt"
+                },
+                "needToPay": "charge"
+            }
+        ]
+    },
+    {
+        "owner": "AB",
+        "baseClass": "economy",
+        "tariffCodePattern": "^(\\w*\\d*(FF))\\w*\\d*$",
+        "parameters": [
+            {
+                "code": "description",
+                "shortDescription": {
+                    "ru": "Гибкий",
+                    "en": "Flex",
+                    "de": "Flexibel"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": null
+            },
+            {
+                "code": "vipService",
+                "shortDescription": {
+                    "ru": "Пакет приоритетного обслуживания",
+                    "en": "Priority Services",
+                    "de": "Priority Service Package"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "carryOn",
+                "shortDescription": {
+                    "ru": "2 сумки до 8 кг каждая",
+                    "en": "2 items up to 8 kg each",
+                    "de": "2 Beutel bis 8 kg"
+                },
+                "fullDescription": {
+                    "ru": "2 сумки. Вес сумки не должен превышать 8 кг, с ноутбуком — 10 кг",
+                    "en": "2 items up to 8 kg each (with a laptop — up to 10 kg)",
+                    "de": "2 Beutel. Das Gewicht der Tasche sollte 8 kg nicht überschreiten, mit einem Laptop — 10 kg"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "baggage",
+                "shortDescription": {
+                    "ru": "2 сумки до 23 кг каждая",
+                    "en": "2 items up to 23 kg each"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "meal",
+                "shortDescription": {
+                    "ru": "Закуски и напитки",
+                    "en": "Snacks & Beverages",
+                    "de": "Snacks und Getränke"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "seatsRegistration",
+                "shortDescription": {
+                    "ru": "Резервирование мест",
+                    "en": "Seat Reservation",
+                    "de": "Sitzreservierung"
+                },
+                "fullDescription": {
+                    "ru": "Бесплатное резервирование мест",
+                    "en": "Seat reservation — available",
+                    "de": "Freie Sitzplatzreservierung"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "refundable",
+                "shortDescription": {
+                    "ru": "Возврат билета",
+                    "en": "Refund",
+                    "de": "Ticketrückerstattung"
+                },
+                "fullDescription": {
+                    "ru": "Возврат билета разрешен без сборов",
+                    "en": "Ticket refund is allowed free of charge",
+                    "de": "Ticketrückerstattung ist kostenlos"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "exchangeable",
+                "shortDescription": {
+                    "ru": "Перебронирование",
+                    "en": "Rebooking",
+                    "de": "Umbuchung"
+                },
+                "fullDescription": {
+                    "ru": "Перебронирование разрешено без сборов",
+                    "en": "Rebooking is allowed free of charge",
+                    "de": "Umbuchung ist kostenlos"
+                },
+                "needToPay": "free"
+            }
+        ]
+    },
+    {
+        "owner": "AB",
+        "baseClass": "economy",
+        "tariffCodePattern": "^(\\w*\\d*(NY))\\w*\\d*$",
+        "parameters": [
+            {
+                "code": "description",
+                "shortDescription": {
+                    "ru": "Промо",
+                    "en": "Promo",
+                    "de": "Promo"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": null
+            },
+            {
+                "code": "carryOn",
+                "shortDescription": {
+                    "ru": "1 сумка до 8 кг",
+                    "en": "1 item up to 8 kg",
+                    "de": "1 Beutel bis 8 kg"
+                },
+                "fullDescription": {
+                    "ru": "Вес сумки не должен превышать 8 кг, с ноутбуком — 10 кг",
+                    "en": "1 item up to 8 kg (with a laptop — up to 10 kg)",
+                    "de": "Das Gewicht der Tasche sollte 8 kg nicht überschreiten, mit einem Laptop — 10 kg"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "meal",
+                "shortDescription": {
+                    "ru": "Закуски и напитки",
+                    "en": "Snacks & Beverages",
+                    "de": "Snacks und Getränke"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "exchangeable",
+                "shortDescription": {
+                    "ru": "Перебронирование",
+                    "en": "Rebooking",
+                    "de": "Umbuchung"
+                },
+                "fullDescription": {
+                    "ru": "Перебронирование не разрешено",
+                    "en": "Rebooking is not allowed",
+                    "de": "Umbuchung ist nicht erlaubt"
+                },
+                "needToPay": "notAvailable"
+            },
+            {
+                "code": "refundable",
+                "shortDescription": {
+                    "ru": "Возврат билета",
+                    "en": "Refund",
+                    "de": "Ticketrückerstattung"
+                },
+                "fullDescription": {
+                    "ru": "Тариф полностью невозвратный",
+                    "en": "Fare is non-refundable",
+                    "de": "Fahrpreis ist nicht erstattungsfähig"
+                },
+                "needToPay": "notAvailable"
+            },
+            {
+                "code": "baggage",
+                "shortDescription": {
+                    "ru": "Платный",
+                    "en": "No free baggage allowance"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "charge"
+            }
+        ]
+    },
+    {
+        "owner": "AB",
+        "baseClass": "economy",
+        "tariffCodePattern": "^(\\w*\\d*(NN))\\w*\\d*$",
+        "parameters": [
+            {
+                "code": "description",
+                "shortDescription": {
+                    "ru": "Деловой",
+                    "en": "Deal",
+                    "de": "Deal"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": null
+            },
+            {
+                "code": "carryOn",
+                "shortDescription": {
+                    "ru": "1 сумка до 8 кг",
+                    "en": "1 item up to 8 kg",
+                    "de": "1 Beutel bis 8 kg"
+                },
+                "fullDescription": {
+                    "ru": "Вес сумки не должен превышать 8 кг, с ноутбуком — 10 кг",
+                    "en": "1 item up to 8 kg (with a laptop — up to 10 kg)",
+                    "de": "Das Gewicht der Tasche sollte 8 kg nicht überschreiten, mit einem Laptop — 10 kg"
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "baggage",
+                "shortDescription": {
+                    "ru": "1 сумка до 23 кг",
+                    "en": "1 item up to 23 kg"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "meal",
+                "shortDescription": {
+                    "ru": "Закуски и напитки",
+                    "en": "Snacks & Beverages",
+                    "de": "Snacks und Getränke"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            },
+            {
+                "code": "exchangeable",
+                "shortDescription": {
+                    "ru": "Перебронирование",
+                    "en": "Rebooking",
+                    "de": "Umbuchung"
+                },
+                "fullDescription": {
+                    "ru": "Перебронирование не разрешено",
+                    "en": "Rebooking is not allowed",
+                    "de": "Umbuchung ist nicht erlaubt"
+                },
+                "needToPay": "notAvailable"
+            },
+            {
+                "code": "refundable",
+                "shortDescription": {
+                    "ru": "Возврат билета",
+                    "en": "Refund",
+                    "de": "Ticketrückerstattung"
+                },
+                "fullDescription": {
+                    "ru": "Тариф полностью невозвратный",
+                    "en": "Fare is non-refundable",
+                    "de": "Fahrpreis ist nicht erstattungsfähig"
+                },
+                "needToPay": "notAvailable"
+            }
+        ]
+    },
+    {
+        "owner": "AB",
+        "baseClass": "economy",
+        "tariffCodePattern": "^([YC](IF))$",
+        "parameters": [
+            {
+                "code": "description",
+                "shortDescription": {
+                    "ru": "IATA Тариф",
+                    "en": "IATA Tariff",
+                    "de": "IATA"
+                },
+                "fullDescription": {
+                    "ru": "Тариф является базовым для данного направления и не привязан к авиакомпании. Подробности о предоставляемых услугах уточняйте в условиях применения тарифа",
+                    "en": "This tariff has no connection to the airline and works only on this route. Please check the fare rules for more details"
+                },
+                "needToPay": null
+            },
+            {
+                "code": "baggage",
+                "shortDescription": {
+                    "ru": "Информация по провозу ручной клади и багажа уточняется в условиях применения тарифа",
+                    "en": "Check the fare rules to specify the baggage allowance"
+                },
+                "fullDescription": {
+                    "ru": "",
+                    "en": ""
+                },
+                "needToPay": "free"
+            }
+        ]
+    }
+]

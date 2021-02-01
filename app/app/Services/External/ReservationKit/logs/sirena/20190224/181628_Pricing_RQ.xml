@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sirena>
+  <query>
+    <pricing>
+      <segment>
+        <departure>MOW</departure>
+        <arrival>LED</arrival>
+        <date>20.03.2019</date>
+      </segment>
+      <segment>
+        <departure>LED</departure>
+        <arrival>MOW</arrival>
+        <date>21.03.2019</date>
+      </segment>
+      <passenger>
+        <code>ADT</code>
+        <count>2</count>
+      </passenger>
+      <answer_params>
+        <show_available>true</show_available>
+        <show_io_matching>true</show_io_matching>
+        <show_flighttime>true</show_flighttime>
+        <show_varianttotal>true</show_varianttotal>
+        <show_baseclass>true</show_baseclass>
+        <lang>en</lang>
+        <curr>RUB</curr>
+      </answer_params>
+      <request_params>
+        <min_results>spOnePass</min_results>
+        <max_results>250</max_results>
+        <fingering_order>differentFlightsCombFirst</fingering_order>
+        <tick_ser>ЭБМ</tick_ser>
+        <et_if_possible>true</et_if_possible>
+        <timeout>150</timeout>
+      </request_params>
+    </pricing>
+  </query>
+</sirena>
